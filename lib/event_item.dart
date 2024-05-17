@@ -72,14 +72,14 @@ class TimelineEventCard extends StatelessWidget {
 
   Widget _title(BuildContext context) {
     return DefaultTextStyle(
-      style: Theme.of(context).textTheme.subtitle1 ?? TextStyle(),
+      style: Theme.of(context).textTheme.titleLarge ?? TextStyle(),
       child: title,
     );
   }
 
   Widget _description(BuildContext context) {
     return DefaultTextStyle(
-      style: Theme.of(context).textTheme.overline ?? TextStyle(),
+      style: TextStyle(),
       child: content,
     );
   }
@@ -105,7 +105,7 @@ class TimelineSectionDivider extends StatelessWidget {
   Widget _content(BuildContext context) {
     return AnimatedDefaultTextStyle(
         child: content,
-        style: Theme.of(context).textTheme.headline5 ?? TextStyle(),
+        style: Theme.of(context).textTheme.headlineMedium ?? TextStyle(),
         duration: kThemeChangeDuration);
   }
 }
